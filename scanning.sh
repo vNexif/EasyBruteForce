@@ -55,17 +55,17 @@ while getopts "hsi:c:b:fw" opt; do
         exit 1;
         ;;
     i)	INTERFACE=${OPTARG}
-		;;
+	;;
     c)	CH=${OPTARG}
-		;;
+	;;
     b)	AP_BSSID=${OPTARG};
-		;;
+	;;
     f) 	scan_target;
         exit 1;
       	;;
     w)	get_target_frames;
-		exit 1;
-		;;
+	exit 1;
+	;;
 
     esac
 done
