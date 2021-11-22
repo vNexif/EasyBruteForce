@@ -47,22 +47,22 @@ while getopts "hsi:b:c:dg:f:" opt; do
         exit 1;
         ;;
     i)	INTERFACE=${OPTARG}
-		;;
+	;;
     b)	AP_BSSID=${OPTARG};
-		;;
+	;;
     c)	STA=${OPTARG};
-		;;
+	;;
     d) 	diasssoc;
         exit 1;
       	;;
     g)  DIC=${OPTARG};
-		pwd_gen;
-		exit 1;
-		;;
+	pwd_gen;
+	exit 1;
+	;;
     f)	DIC=${OPTARG};
-		crack_pwd;
-		exit 1;
-		;;
+	crack_pwd;
+	exit 1;
+	;;
 
     esac
 done
